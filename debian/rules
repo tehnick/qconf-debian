@@ -5,6 +5,10 @@ include /usr/share/cdbs/1/class/qmake.mk
 
 QMAKE=qmake-qt4
 
+PACKAGE = qconf
+
+CUR_VER = $(shell dpkg-parsechangelog | sed -ne 's/^Version: \(\([0-9]\+\):\)\?\(.*\)-.*/\3/p')
+
 configure/qconf::
 	./configure --prefix=/usr
 
@@ -17,3 +21,6 @@ clean::
 install/qconf::
 	mv debian/qconf/usr/bin/qconf debian/qconf/usr/bin/qt-qconf
 
+get-orig-source::
+	wget -4 "http://delta.affinix.com/download/qconf-$(CUR_VER).tar.bz2"
+	mv -f "$(PACKAGE)-$(CUR_VER).tar.bz2" "$(PACKAGE)_$(CUR_VER).orig.tar.bz2"

@@ -1,3 +1,11 @@
+qconf (1.4-3) unstable; urgency=low
+
+  * Additional fields Vcs-Svn and Vcs-Browser in debian/control were added.
+  * Additional section get-orig-source was added in debian/rules.
+  * File debian/copyright was rewritten in according to DEP-5.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 17 Oct 2011 00:06:28 +0300
+
 qconf (1.4-2) unstable; urgency=low
 
   * New maintainer (Closes: #620033)
