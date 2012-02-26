@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 7.0.50~), cdbs, libqt4-dev
 Homepage: http://delta.affinix.com/qconf
 Vcs-Git: git://github.com/tehnick/qconf-debian.git
 Vcs-Browser: https://github.com/tehnick/qconf-debian
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 
 Package: qconf
 Architecture: any
