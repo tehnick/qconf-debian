@@ -1,3 +1,22 @@
+qconf (1.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump debhelper version to 9 (was 7.0.50~); update debian/compat.
+  * Bump Standards-Version to 3.9.5 (was 3.9.2): no changes required.
+  * Update debian/control:
+    - update Homepage field
+    - delete build dependency on cdbs
+    - update short and long descriptions of binary package
+  * Update debian/rules:
+    - update get-orig-source section
+    - rewrite rules from cdbs to dh
+    - add hardening flags in compiler options
+  * Add debian/patches/add-hardening-flags-in-compiler-options.patch.
+  * Update years and upstream info in debian/copyright.
+  * Update debian/watch: new upstream.
+
+ -- Boris Pek <tehnick@debian.org>  Wed, 15 Jan 2014 00:46:01 +0400
+
 qconf (1.4-3) unstable; urgency=low
 
   * Additional fields Vcs-Svn and Vcs-Browser in debian/control were added.
