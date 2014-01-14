@@ -3,7 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), cdbs, libqt4-dev
-Homepage: http://delta.affinix.com/qconf
+Homepage: https://github.com/psi-plus/qconf
 Vcs-Git: git://github.com/tehnick/qconf-debian.git
 Vcs-Browser: https://github.com/tehnick/qconf-debian
 Standards-Version: 3.9.3
@@ -11,8 +11,10 @@ Standards-Version: 3.9.3
 Package: qconf
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Nice configure script for your qmake-based project
+Description: nice configure script for your qmake-based projects
  It is intended for developers who don’t need (or want)
  to use the more complex GNU autotools. With qconf/qmake,
  it is easy to maintain a cross-platform project that
- uses a familiar configuration interface on unix.
+ uses a familiar configuration interface on *nix.
+ .
+ Qt 4.x and Qt 5.x are currently supported.
