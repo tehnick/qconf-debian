@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9), cdbs, libqt4-dev
 Homepage: https://github.com/psi-plus/qconf
 Vcs-Git: git://github.com/tehnick/qconf-debian.git
 Vcs-Browser: https://github.com/tehnick/qconf-debian
-Standards-Version: 3.9.3
+Standards-Version: 3.9.5
 
 Package: qconf
 Architecture: any
