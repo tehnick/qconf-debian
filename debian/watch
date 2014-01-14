@@ -1,2 +1,2 @@
 version=3
-http://delta.affinix.com/qconf .*qconf-(.*)\.tar\.bz2
+https://github.com/psi-plus/qconf/tags .*/psi-plus/qconf/archive/(\d.+)\.tar\.gz debian uupdate
