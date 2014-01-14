@@ -11,7 +11,7 @@ Standards-Version: 3.9.5
 Package: qconf
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: nice configure script for your qmake-based projects
+Description: nice configure script for qmake-based projects
  It is intended for developers who don’t need (or want)
  to use the more complex GNU autotools. With qconf/qmake,
  it is easy to maintain a cross-platform project that
