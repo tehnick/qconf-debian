@@ -1,8 +1,5 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/qmake.mk
-
 PACKAGE = qconf
 
 DEBIAN_PATH := $(abspath $(dir $(MAKEFILE_LIST)))
@@ -12,17 +9,22 @@ CUR_URL = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-url>\(.*\)<\/up
 
 QMAKE=qmake-qt4
 
-configure/qconf::
+%:
+	dh $@ --parallel
+
+override_dh_auto_configure:
 	./configure --prefix=/usr
 
-clean::
+override_dh_auto_install:
+	dh_auto_install
+	mv debian/qconf/usr/bin/qconf debian/qconf/usr/bin/qt-qconf
+
+override_dh_auto_clean:
+	dh_auto_clean
 	rm -rf debian/qconf
 	rm -f config.guess config.sub conf.log conf.pri
 	rm -f debian/qconf.substvars debian/qconf.debhelper.log
 	rm -f qconf qconf.o stringhelp.o
-
-install/qconf::
-	mv debian/qconf/usr/bin/qconf debian/qconf/usr/bin/qt-qconf
 
 get-orig-source::
 	wget -c4 "$(CUR_URL)" -O "$(PACKAGE)_$(CUR_VER).orig.tar.gz"
