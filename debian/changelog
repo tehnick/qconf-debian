@@ -1,3 +1,9 @@
+qconf (1.5-1~bpo70+1) wheezy-backports; urgency=medium
+
+  * Rebuild for wheezy-backports.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 23 Jan 2014 13:18:17 +0400
+
 qconf (1.5-1) unstable; urgency=medium
 
   * New upstream release.
