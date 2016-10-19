@@ -2,9 +2,9 @@ Source: qconf
 Section: devel
 Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
-Build-Depends: debhelper (>= 9), libqt4-dev
+Build-Depends: debhelper (>= 9), qtbase5-dev
 Homepage: https://github.com/psi-plus/qconf
-Vcs-Git: git://github.com/tehnick/qconf-debian.git
+Vcs-Git: https://github.com/tehnick/qconf-debian.git
 Vcs-Browser: https://github.com/tehnick/qconf-debian
 Standards-Version: 3.9.8
 
