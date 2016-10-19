@@ -1,1 +1,2 @@
 add-hardening-flags-in-compiler-options.patch
+remove-bashism-from-configure.patch

@@ -1,0 +1,16 @@
+Description: Remove bashism from configure
+Origin: upstream, https://github.com/psi-plus/qconf/commit/13505e3
+Last-Update: 2016-10-20
+
+diff --git a/configure b/configure
+--- a/configure
++++ b/configure
+@@ -173,7 +173,7 @@
+ printf "Verifying Qt build environment ... "
+ 
+ if [ -z "$QC_QTSELECT" ]; then
+-	QC_QTSELECT="${QT_SELECT/qt/}"
++	QC_QTSELECT="$(echo $QT_SELECT | tr -d "qt")"
+ fi
+ 
+ if [ ! -z "$QC_QTSELECT" ]; then
