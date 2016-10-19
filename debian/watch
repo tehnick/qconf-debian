@@ -1,2 +1,3 @@
 version=3
-https://github.com/psi-plus/qconf/tags .*/psi-plus/qconf/archive/(\d.+)\.tar\.gz debian uupdate
+https://github.com/psi-plus/qconf/tags .*/psi-plus/qconf/archive/v(\d.+)\.tar\.gz \
+debian uupdate
