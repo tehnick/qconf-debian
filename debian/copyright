@@ -4,7 +4,7 @@ Debianized-Date: Sat, 11 Jul 2009 17:57:14 +0400
 Upstream-Name: qconf
 Upstream-Contact: Sergey Ilinyh aka Rion <rion4ik@gmail.com>
 Source: https://github.com/psi-plus/qconf/tags
- The orig.tar.gz is is just renamed upstream tarball (without changes).
+ The orig.tar.gz is just renamed upstream tarball (without changes).
  See section get-orig-source in debian/rules file for details.
 
 Files: *
@@ -13,7 +13,7 @@ License: GPL-2+
 
 Files: debian/*
 Copyright: 2009 Ivan Borzenkov <ivan1986@list.ru>
- 2011-2014 Boris Pek <tehnick-8@mail.ru>
+           2011-2016 Boris Pek <tehnick-8@mail.ru>
 License: GPL-2+
 
 License: GPL-2+
