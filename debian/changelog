@@ -1,3 +1,24 @@
+qconf (2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 3.9.8 (was 3.9.5): no changes required.
+  * Add remove-bashism-from-configure.patch.
+  * Update add-hardening-flags-in-compiler-options.patch.
+  * Update debian/rules:
+    - change build dependency from libqt4-dev to qtbase5-dev
+    - fix lintian note vcs-field-uses-insecure-uri vcs-git
+  * Update debian/rules:
+    - fix dh_auto_install problem [Thanks to Jan Niehusmann] (Closes: #840177)
+    - add --verbose to configure options
+    - build with Qt5 instead of Qt4
+    - enable all hardening flags
+  * Update debian/copyright.
+  * Update debian/watch.
+  * Update debian/docs.
+  * Delete debian/dirs.
+
+ -- Boris Pek <tehnick@debian.org>  Thu, 20 Oct 2016 02:59:07 +0300
+
 qconf (1.5-1) unstable; urgency=medium
 
   * New upstream release.
